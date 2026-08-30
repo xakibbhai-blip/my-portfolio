@@ -9,6 +9,56 @@
       "id": "02",
       "label_en": "Banner Design",
       "label": "ব্যানার ডিজাইন"
+    },
+    {
+      "id": "03",
+      "label_en": "Social Media Design",
+      "label": "সোশ্যাল মিডিয়া ডিজাইন"
+    },
+    {
+      "id": "04",
+      "label": "প্রোডাক্ট লেবেল ডিজাইন",
+      "label_en": "Product Label Design"
+    },
+    {
+      "id": "05",
+      "label_en": "Packaging Design",
+      "label": "প্যাকেজিং ডিজাইন"
+    },
+    {
+      "id": "06",
+      "label": "ভেক্টর ড্রয়িং",
+      "label_en": "Vector Drawing"
+    },
+    {
+      "id": "07",
+      "label": "Visiting Card",
+      "label_en": "ভিজিটিং কার্ড"
+    },
+    {
+      "id": "08",
+      "label": "লিফলেট",
+      "label_en": "Leaflet"
+    },
+    {
+      "id": "09",
+      "label_en": "Poster Design",
+      "label": "পোস্টার ডিজাইন"
+    },
+    {
+      "id": "10",
+      "label": "বুক কভার ডিজাইন",
+      "label_en": "Book Cover Design"
+    },
+    {
+      "label_en": "ID Card Design",
+      "label": "আইডি কার্ড ডিজাইন",
+      "id": "11"
+    },
+    {
+      "label_en": "Others",
+      "label": "অন্যান্য",
+      "id": "12"
     }
   ]
 }
