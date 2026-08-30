@@ -214,16 +214,97 @@ function renderFilterBar() {
 function renderGrid() {
   const grid = document.getElementById("grid");
   if (!grid) return;
-  const items = activeCategory === "all" ? allItems : allItems.filter((it) => normalizeId(it.category) === normalizeId(activeCategory));
-  if (items.length === 0) { grid.innerHTML = `<div class="empty-state">${t("empty")}</div>`; return; }
-  grid.innerHTML = items.map((it) => {
-    const title = pick(it, "title");
-    const description = pick(it, "description");
-    const cat = CATEGORIES.find(c => normalizeId(c.id) === normalizeId(it.category)) || { label: it.category, label_en: it.category };
-    return `<div class="work-card"><div class="work-thumb"><img src="${it.image}" alt="${title}" loading="lazy"></div><div class="work-body"><div class="work-tag">${categoryLabel(cat)}</div><div class="work-title">${title}</div>${description ? `<div class="work-desc">${description}</div>` : ""}</div></div>`;
-  }).join("");
-}
 
+  const items = activeCategory === "all"
+    ? allItems
+    : allItems.filter(
+        (it) =>
+          normalizeId(it.category) === normalizeId(activeCategory)
+      );
+
+  if (items.length === 0) {
+    grid.innerHTML = `<div class="empty-state">${t("empty")}</div>`;
+    return;
+  }
+
+  grid.innerHTML = items
+    .map((it) => {
+      const title = pick(it, "title");
+      const description = pick(it, "description");
+
+      const cat =
+        CATEGORIES.find(
+          (c) =>
+            normalizeId(c.id) === normalizeId(it.category)
+        ) || {
+          label: it.category,
+          label_en: it.category
+        };
+
+      const gallery = Array.isArray(it.gallery)
+        ? it.gallery
+        : [];
+
+      const allImages = [
+        it.image,
+        ...gallery
+      ].filter(Boolean);
+
+      return `
+        <div class="work-card"
+             data-gallery='${JSON.stringify(allImages).replace(/'/g, "&#39;")}'
+             data-title="${title.replace(/"/g, "&quot;")}">
+
+          <div class="work-thumb">
+            <img
+              src="${it.image}"
+              alt="${title}"
+              loading="lazy"
+            >
+          </div>
+
+          <div class="work-body">
+            <div class="work-tag">${categoryLabel(cat)}</div>
+            <div class="work-title">${title}</div>
+
+            ${
+              description
+                ? `<div class="work-desc">${description}</div>`
+                : ""
+            }
+
+            ${
+              allImages.length > 1
+                ? `<div class="work-gallery-count">
+                    ${allImages.length} images
+                  </div>`
+                : ""
+            }
+          </div>
+        </div>
+      `;
+    })
+    .join("");
+
+  grid.querySelectorAll(".work-card").forEach((card) => {
+    card.addEventListener("click", () => {
+      try {
+        const images = JSON.parse(
+          card.dataset.gallery || "[]"
+        );
+
+        if (images.length > 0) {
+          openLightbox(
+            images[0],
+            card.dataset.title || ""
+          );
+        }
+      } catch (err) {
+        console.error("Gallery load error:", err);
+      }
+    });
+  });
+}
 async function loadBestWork() {
   try {
     const res = await fetch("content/bestwork.json", { cache: "no-store" });
