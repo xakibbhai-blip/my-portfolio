@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title id="pageTitle">SAKIBDESIGNLAB — Graphic Design Portfolio</title>
+<meta name="description" content="Graphic design portfolio. Contact me directly on WhatsApp." />
+
+<!-- এই ৬টা লাইন Facebook/WhatsApp এ লিংক শেয়ার করলে প্রিভিউ কার্ডে দেখায়। -->
+<!-- ডেপ্লয় করার পর "YOUR-DOMAIN-HERE" এর জায়গায় আসল সাইটের ঠিকানা বসান (যেমন https://sakibdesignlab.netlify.app) -->
+<meta property="og:type" content="website" />
+<meta property="og:title" content="SAKIBDESIGNLAB — Graphic Design Portfolio" />
+<meta property="og:description" content="Logo, banner, social media and vector design — freelance graphic designer. Contact directly on WhatsApp." />
+<meta property="og:image" content="https://YOUR-DOMAIN-HERE/images/uploads/og-image.png" />
+<meta property="og:url" content="https://YOUR-DOMAIN-HERE" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="SAKIBDESIGNLAB — Graphic Design Portfolio" />
+<meta name="twitter:description" content="Logo, banner, social media and vector design — freelance graphic designer." />
+<meta name="twitter:image" content="https://YOUR-DOMAIN-HERE/images/uploads/og-image.png" />
+
+<link rel="icon" id="faviconLink" href="/favicon.svg" type="image/svg+xml" />
+<link rel="icon" href="/favicon-32.png" sizes="32x32" type="image/png" />
+<link rel="icon" href="/favicon-16.png" sizes="16x16" type="image/png" />
+<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<div id="splash" class="splash" aria-hidden="true">
+  <div class="splash-inner">
+    <div class="splash-brand" id="splashBrand">SAKIBDESIGNLAB</div>
+    <div class="splash-line"></div>
+    <div class="splash-meta">
+      <span class="splash-label" data-i18n="loadingLabel">LOADING</span>
+      <span class="splash-percent" id="splashPercent">0%</span>
+    </div>
+  </div>
+</div>
+
+<nav class="nav">
+  <div class="wrap">
+    <a href="#top" class="brand">
+      <img id="navLogo" class="brand-logo" src="/favicon.svg" alt="" />
+      <span data-name>Your Name</span>
+    </a>
+    <div class="nav-links">
+      <a href="#work" data-i18n="navWork">Work</a>
+      <a href="#pricing" data-i18n="navPricing">Pricing</a>
+      <a href="#whyhire" data-i18n="navWhyHire">Why Me</a>
+      <a href="#about" data-i18n="navAbout">About</a>
+      <a href="#contact" data-i18n="navContact">Contact</a>
+    </div>
+    <div class="nav-right">
+      <a class="nav-fb" data-fb-link href="#" target="_blank" rel="noopener" aria-label="Facebook" style="display:none;">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06C2 17.08 5.66 21.24 10.44 22v-7.03H7.9v-2.91h2.54V9.85c0-2.5 1.49-3.89 3.77-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.45 2.91h-2.33V22C18.34 21.24 22 17.08 22 12.06z"/>
+        </svg>
+      </a>
+      <div class="lang-switch">
+        <button class="lang-btn" data-lang="en">EN</button>
+        <button class="lang-btn" data-lang="bn">বাং</button>
+      </div>
+      <a class="nav-cta" data-wa-link href="#" target="_blank" rel="noopener" data-i18n="navWhatsApp">
+        Message on WhatsApp
+      </a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="wrap hero-grid">
+    <div class="hero-text">
+      <div class="eyebrow" data-i18n="eyebrowHero">FREELANCE VISUAL DESIGNER</div>
+      <h1 class="hero-title">
+        <span data-i18n="heroPrefix">I’m</span> <span class="accent" data-name>Your Name</span><br>
+        <span data-i18n="heroTitle">I build visual identities for brands</span>
+      </h1>
+      <p class="hero-sub" data-tagline></p>
+
+      <div class="contact-strip">
+        <span class="contact-pill">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          <a href="tel:" data-phone>Phone</a>
+        </span>
+        <span class="contact-pill">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          <span data-location>Location</span>
+        </span>
+        <span class="contact-pill">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16v16H4z" opacity="0"/><path d="M22 6l-10 7L2 6"/><path d="M2 6h20v12H2z"/></svg>
+          <a href="#" data-email>Email</a>
+        </span>
+      </div>
+
+      <div class="hero-actions">
+        <a data-wa-link href="#" target="_blank" rel="noopener" class="btn btn-primary" data-i18n="heroWhatsApp">Talk on WhatsApp</a>
+        <a href="#work" class="btn btn-ghost" data-i18n="heroViewWork">View my work ↓</a>
+        <a data-gdrive-link href="#" target="_blank" rel="noopener" class="btn btn-drive" style="display:none;">View on Google Drive</a>
+      </div>
+    </div>
+
+    <div class="hero-photo">
+      <div class="hero-photo-frame">
+        <img data-profile-img src="/images/uploads/profile-placeholder.svg" alt="" />
+      </div>
+    </div>
+  </div>
+</header>
+
+<section id="work">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow" data-i18n="servicesEyebrow">SERVICE CATEGORIES</div>
+      <h2 data-i18n="servicesTitle">What I do</h2>
+      <p data-i18n="servicesText">Click any category below to view that type of work.</p>
+    </div>
+    <div class="board" id="board"></div>
+  </div>
+</section>
+
+<section id="portfolio">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow" data-i18n="portfolioEyebrow">PORTFOLIO</div>
+      <h2 data-i18n="portfolioTitle">Recent work</h2>
+    </div>
+    <div class="filter-bar" id="filterBar"></div>
+    <div class="grid" id="grid"></div>
+  </div>
+</section>
+
+<section id="bestwork">
+  <div class="wrap section-head">
+    <div class="eyebrow" data-i18n="bestworkEyebrow">FEATURED</div>
+    <h2 data-i18n="bestworkTitle">Best Work</h2>
+    <p data-i18n="bestworkText">Click any image to view it full size — drag sideways to browse more.</p>
+  </div>
+  <div class="bestwork-track" id="bestworkTrack"></div>
+</section>
+
+<section id="whyhire">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow" data-i18n="whyhireEyebrow">WHY CHOOSE ME</div>
+      <h2 data-i18n="whyhireTitle">Why Hire Me</h2>
+    </div>
+    <div class="whyhire-grid" id="whyhireGrid"></div>
+    <div class="skills-block">
+      <h3 data-i18n="skillsTitle">Skills &amp; Tools</h3>
+      <div class="skills-list" id="skillsList"></div>
+    </div>
+  </div>
+</section>
+
+<section id="pricing">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow" data-i18n="pricingEyebrow">PRICING</div>
+      <h2 data-i18n="pricingTitle">Packages</h2>
+      <p data-i18n="pricingText">Pick a package that fits your project — or message me for a custom quote.</p>
+    </div>
+    <div class="pricing-grid" id="pricingGrid"></div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="wrap about">
+    <div class="about-card">
+      <div class="about-card-inner">
+        <div class="eyebrow" data-i18n="aboutEyebrow">ABOUT ME</div>
+        <h2 style="margin-top:10px; font-size:1.8rem;" data-name>Your Name</h2>
+        <p style="margin-top:14px; color:var(--ink-dim); white-space:pre-line;" data-bio></p>
+      </div>
+    </div>
+    <div>
+      <div class="stat-row">
+        <div class="stat"><b data-years></b><span data-i18n="yearsLabel">Years of experience</span></div>
+        <div class="stat"><b data-projects></b><span data-i18n="projectsLabel">Completed projects</span></div>
+        <div class="stat"><b data-clients></b><span data-i18n="clientsLabel">Happy clients</span></div>
+      </div>
+      <p style="margin-top:26px; color:var(--ink-dim);" data-i18n="aboutText">
+        Want to discuss a project? Send me a message on WhatsApp — I usually reply within a few hours.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap">
+    <div class="contact-panel">
+      <h2 data-i18n="contactTitle">Want to discuss a new project?</h2>
+      <div style="display:flex; gap:14px; flex-wrap:wrap;">
+        <a data-wa-link href="#" target="_blank" rel="noopener" class="btn btn-primary" data-i18n="contactWhatsApp">Message on WhatsApp</a>
+        <a data-email href="#" class="btn btn-ghost" data-i18n="contactEmail">Email me</a>
+        <a data-gdrive-link href="#" target="_blank" rel="noopener" class="btn btn-drive" style="display:none;">View on Google Drive</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    &copy; <span id="year"></span> <span data-name>Your Name</span>. <span data-i18n="footerRights">All rights reserved.</span>
+  </div>
+</footer>
+
+<a class="fb-float" data-fb-link href="#" target="_blank" rel="noopener" aria-label="Facebook" style="display:none;">
+  <svg width="26" height="26" viewBox="0 0 24 24" fill="#F6F1FF">
+    <path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06C2 17.08 5.66 21.24 10.44 22v-7.03H7.9v-2.91h2.54V9.85c0-2.5 1.49-3.89 3.77-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.45 2.91h-2.33V22C18.34 21.24 22 17.08 22 12.06z"/>
+  </svg>
+</a>
+
+<a class="wa-float" data-wa-link href="#" target="_blank" rel="noopener" data-i18n-attr="aria-label:waAria">
+  <svg width="30" height="30" viewBox="0 0 24 24" fill="#08210f">
+    <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.29-1.39a9.9 9.9 0 0 0 4.7 1.2h.01c5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2zm0 18.13c-1.47 0-2.91-.4-4.16-1.15l-.3-.18-3.14.82.84-3.06-.19-.31a8.2 8.2 0 0 1-1.26-4.34c0-4.53 3.69-8.22 8.22-8.22 2.2 0 4.26.86 5.82 2.41a8.17 8.17 0 0 1 2.4 5.81c0 4.53-3.69 8.22-8.23 8.22zm4.51-6.16c-.25-.12-1.47-.72-1.7-.81-.23-.08-.39-.12-.56.13-.17.24-.64.8-.78.97-.14.16-.29.18-.53.06-.25-.12-1.04-.38-1.98-1.22-.73-.65-1.23-1.46-1.37-1.7-.14-.25-.02-.38.11-.5.11-.11.25-.29.37-.43.12-.14.16-.24.25-.41.08-.16.04-.31-.02-.43-.06-.12-.56-1.34-.77-1.84-.2-.48-.41-.42-.56-.42-.14 0-.31-.02-.47-.02s-.43.06-.66.31c-.23.24-.86.85-.86 2.06s.89 2.39 1.01 2.56c.12.16 1.75 2.67 4.24 3.74.59.26 1.06.41 1.42.52.6.19 1.14.16 1.57.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.14-1.18-.06-.1-.22-.16-.47-.28z"/>
+  </svg>
+</a>
+
+<div id="lightbox" class="lightbox">
+  <button class="lightbox-close" id="lightboxClose" aria-label="Close">&times;</button>
+  <img id="lightboxImg" src="" alt="" />
+</div>
+
+<script src="js/main.js"></script>
+<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+<script>
+  if (window.netlifyIdentity) {
+    window.netlifyIdentity.on("init", (user) => {
+      if (!user) {
+        window.netlifyIdentity.on("login", () => {
+          document.location.href = "/admin/";
+        });
+      }
+    });
+  }
+</script>
+</body>
+</html>

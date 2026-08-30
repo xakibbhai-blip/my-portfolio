@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#120e1a"/>
+      <stop offset="100%" stop-color="#1b1428"/>
+    </linearGradient>
+    <radialGradient id="glow1" cx="20%" cy="15%" r="55%">
+      <stop offset="0%" stop-color="#7C3AED" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#7C3AED" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow2" cx="85%" cy="85%" r="55%">
+      <stop offset="0%" stop-color="#FF3D9A" stop-opacity="0.45"/>
+      <stop offset="100%" stop-color="#FF3D9A" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="badge" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#7C3AED"/>
+      <stop offset="55%" stop-color="#FF3D9A"/>
+      <stop offset="100%" stop-color="#FF7A45"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#FF3D9A"/>
+      <stop offset="50%" stop-color="#FF7A45"/>
+      <stop offset="100%" stop-color="#FFD23F"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect width="1200" height="630" fill="url(#glow1)"/>
+  <rect width="1200" height="630" fill="url(#glow2)"/>
+
+  <rect x="90" y="90" width="96" height="96" rx="22" fill="url(#badge)"/>
+  <text x="138" y="158" text-anchor="middle" font-family="Georgia, serif" font-weight="700" font-size="56" fill="#F6F1FF">S</text>
+
+  <text x="90" y="280" font-family="Arial, sans-serif" font-weight="800" font-size="72" fill="#F6F1FF">SAKIBDESIGNLAB</text>
+  <text x="90" y="340" font-family="Arial, sans-serif" font-weight="500" font-size="32" fill="#B9AED1">Where Thoughts Find Their Form</text>
+
+  <rect x="90" y="390" width="160" height="6" rx="3" fill="url(#accent)"/>
+
+  <text x="90" y="450" font-family="Arial, sans-serif" font-weight="600" font-size="28" fill="#F6F1FF">Logo · Banner · Social Media · Vector Design</text>
+  <text x="90" y="500" font-family="'Courier New', monospace" font-weight="600" font-size="24" fill="#2FE6C9">Freelance Graphic Designer</text>
+</svg>

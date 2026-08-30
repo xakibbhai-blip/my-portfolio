@@ -1,0 +1,37 @@
+{
+  "items": [
+    {
+      "name": "বেসিক",
+      "name_en": "Basic",
+      "price": "৫০০৳",
+      "price_en": "৳500",
+      "period": "প্রতি ডিজাইন",
+      "period_en": "per design",
+      "features": ["১টি লোগো/ডিজাইন কনসেপ্ট", "২টি রিভিশন", "৩ দিনে ডেলিভারি", "JPG/PNG ফাইল"],
+      "features_en": ["1 logo/design concept", "2 revisions", "3-day delivery", "JPG/PNG files"],
+      "highlighted": false
+    },
+    {
+      "name": "স্ট্যান্ডার্ড",
+      "name_en": "Standard",
+      "price": "১২০০৳",
+      "price_en": "৳1200",
+      "period": "প্রতি ডিজাইন",
+      "period_en": "per design",
+      "features": ["৩টি ডিজাইন কনসেপ্ট", "৫টি রিভিশন", "২ দিনে ডেলিভারি", "সব ফাইল ফরম্যাট", "সোর্স ফাইল সহ"],
+      "features_en": ["3 design concepts", "5 revisions", "2-day delivery", "All file formats", "Source file included"],
+      "highlighted": true
+    },
+    {
+      "name": "প্রিমিয়াম",
+      "name_en": "Premium",
+      "price": "২৫০০৳",
+      "price_en": "৳2500",
+      "period": "প্রতি প্রজেক্ট",
+      "period_en": "per project",
+      "features": ["আনলিমিটেড কনসেপ্ট", "আনলিমিটেড রিভিশন", "২৪ ঘণ্টায় ডেলিভারি", "সব ফাইল ফরম্যাট", "ব্র্যান্ড গাইডলাইন সহ", "প্রায়োরিটি সাপোর্ট"],
+      "features_en": ["Unlimited concepts", "Unlimited revisions", "24-hour delivery", "All file formats", "Brand guideline included", "Priority support"],
+      "highlighted": false
+    }
+  ]
+}

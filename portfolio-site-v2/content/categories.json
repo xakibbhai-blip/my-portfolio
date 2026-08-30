@@ -1,0 +1,16 @@
+{
+  "items": [
+    { "id": "logo-design", "label": "লোগো ডিজাইন", "label_en": "Logo Design" },
+    { "id": "banner-design", "label": "ব্যানার ডিজাইন", "label_en": "Banner Design" },
+    { "id": "social-media-design", "label": "সোশ্যাল মিডিয়া ডিজাইন", "label_en": "Social Media Design" },
+    { "id": "product-label", "label": "প্রোডাক্ট লেবেল", "label_en": "Product Label" },
+    { "id": "packaging-design", "label": "প্যাকেজিং ডিজাইন", "label_en": "Packaging Design" },
+    { "id": "vector-drawing", "label": "ভেক্টর ড্রয়িং", "label_en": "Vector Drawing" },
+    { "id": "visiting-card", "label": "ভিজিটিং কার্ড", "label_en": "Visiting Card" },
+    { "id": "leaflet", "label": "লিফলেট", "label_en": "Leaflet" },
+    { "id": "poster", "label": "পোস্টার", "label_en": "Poster" },
+    { "id": "book-cover", "label": "বুক কভার", "label_en": "Book Cover" },
+    { "id": "id-card", "label": "আইডি কার্ড", "label_en": "ID Card" },
+    { "id": "other", "label": "অন্যান্য", "label_en": "Other" }
+  ]
+}
