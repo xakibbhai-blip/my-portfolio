@@ -405,8 +405,10 @@ function hideSplash() {
 function animateSplashPercent(duration) {
   return new Promise((resolve) => {
     const el = document.getElementById("splashPercent");
+    const fill = document.getElementById("splashLineFill");
     if (!el || window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
       if (el) el.textContent = "100%";
+      if (fill) fill.style.width = "100%";
       resolve();
       return;
     }
@@ -415,6 +417,7 @@ function animateSplashPercent(duration) {
       const elapsed = now - start;
       const pct = Math.min(100, Math.round((elapsed / duration) * 100));
       el.textContent = pct + "%";
+      if (fill) fill.style.width = pct + "%";
       if (elapsed < duration) requestAnimationFrame(tick);
       else resolve();
     }
