@@ -90,9 +90,20 @@ img { max-width: 100%; display: block; }
   color: #D9BD8C;
 }
 .splash-line {
-  height: 1px;
-  background: rgba(217, 189, 140, 0.35);
+  position: relative;
+  height: 2px;
+  background: rgba(217, 189, 140, 0.2);
   margin: 20px 0 12px;
+  overflow: hidden;
+  border-radius: 2px;
+}
+.splash-line-fill {
+  position: absolute;
+  top: 0; left: 0; bottom: 0;
+  width: 0%;
+  background: #D9BD8C;
+  border-radius: 2px;
+  transition: width .1s linear;
 }
 .splash-meta {
   display: flex;
