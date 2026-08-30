@@ -4,6 +4,11 @@
       "id": "01",
       "label": "লোগো ডিজাইন",
       "label_en": "Logo Design"
+    },
+    {
+      "id": "02",
+      "label_en": "Banner Design",
+      "label": "ব্যানার ডিজাইন"
     }
   ]
 }
