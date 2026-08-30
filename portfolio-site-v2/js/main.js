@@ -50,7 +50,7 @@ const TRANSLATIONS = {
   },
   en: {
     navWork: "Work", navPricing: "Pricing", navWhyHire: "Why Me", navAbout: "About", navContact: "Contact", navWhatsApp: "Message on WhatsApp",
-    eyebrowHero: "FREELANCE VISUAL DESIGNER", heroPrefix: "I’m", heroTitle: "I build visual identities for brands",
+    eyebrowHero: "FREELANCE VISUAL DESIGNER", heroPrefix: "I'm", heroTitle: "I build visual identities for brands",
     heroWhatsApp: "Talk on WhatsApp", heroViewWork: "View my work ↓",
     servicesEyebrow: "SERVICE CATEGORIES", servicesTitle: "What I do", servicesText: "Click any category below to view that type of work.",
     portfolioEyebrow: "PORTFOLIO", portfolioTitle: "Recent work",
@@ -432,7 +432,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   });
   document.addEventListener("keydown", (e) => { if (e.key === "Escape") closeLightbox(); });
 
-  const percentDone = animateSplashPercent(1100);
+  const percentDone = animateSplashPercent(1800);
   await loadSettings();
   applyTranslations();
   applyStaticInfo();
