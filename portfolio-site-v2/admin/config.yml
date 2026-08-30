@@ -63,42 +63,54 @@ collections:
           - { label: "Bio (Bangla)", name: "bio", widget: "text" }
           - { label: "Bio (English)", name: "bio_en", widget: "text" }
           - { label: "Profile Photo", name: "profileImage", widget: "image" }
+
           - label: "Logo (navbar & loading screen)"
             name: "logo"
             widget: "image"
             required: false
+
           - label: "Favicon (browser tab icon)"
             name: "favicon"
             widget: "image"
             required: false
             hint: "Use a simple square image, it shows very small."
+
           - { label: "Phone", name: "phone", widget: "string", required: false }
           - { label: "Email", name: "email", widget: "string" }
           - { label: "Location", name: "location", widget: "string", required: false }
+
           - label: "WhatsApp Number"
             name: "whatsappNumber"
             widget: "string"
             hint: "With country code, e.g. +8801XXXXXXXXX"
+
           - { label: "WhatsApp Message (Bangla)", name: "whatsappMessage", widget: "string" }
           - { label: "WhatsApp Message (English)", name: "whatsappMessage_en", widget: "string" }
+
           - { label: "Years of Experience (Bangla)", name: "yearsExperience", widget: "string" }
           - { label: "Years of Experience (English)", name: "yearsExperience_en", widget: "string" }
+
           - { label: "Projects Done (Bangla)", name: "projectsDone", widget: "string" }
           - { label: "Projects Done (English)", name: "projectsDone_en", widget: "string" }
+
           - { label: "Happy Clients (Bangla)", name: "happyClients", widget: "string" }
           - { label: "Happy Clients (English)", name: "happyClients_en", widget: "string" }
+
           - label: "Google Drive Link"
             name: "googleDriveUrl"
             widget: "string"
             required: false
             hint: "Paste your Google Drive folder/file share link here. Leave empty to hide the button."
+
           - { label: "Google Drive Button Text (Bangla)", name: "googleDriveLabel", widget: "string", required: false }
           - { label: "Google Drive Button Text (English)", name: "googleDriveLabel_en", widget: "string", required: false }
+
           - label: "Facebook Profile/Page Link"
             name: "facebookUrl"
             widget: "string"
             required: false
             hint: "Paste your full Facebook profile or page URL. Leave empty to hide the Facebook button."
+
           - label: "Link Preview Image (og-image.png)"
             name: "ogImagePlaceholder"
             widget: "image"
@@ -121,10 +133,11 @@ collections:
                 name: "id"
                 widget: "string"
                 hint: "Use in the Portfolio item's Category ID field to link them together. e.g. logo-design"
+
               - { label: "Label (Bangla)", name: "label", widget: "string" }
               - { label: "Label (English)", name: "label_en", widget: "string" }
 
-    - name: "portfolio"
+  - name: "portfolio"
     label: "Portfolio Work / পোর্টফোলিও কাজ"
     files:
       - file: "content/portfolio.json"
@@ -178,6 +191,7 @@ collections:
               - { label: "Title (English)", name: "title_en", widget: "string" }
               - { label: "Description (Bangla)", name: "description", widget: "text" }
               - { label: "Description (English)", name: "description_en", widget: "text" }
+
           - label: "Skills / Tools"
             name: "skills"
             widget: "list"
