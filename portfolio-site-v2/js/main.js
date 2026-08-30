@@ -146,6 +146,7 @@ function applyStaticInfo() {
   if (navLogoEl) navLogoEl.src = CONFIG.logo || CONFIG.favicon;
     const splashLogoEl = document.getElementById("splashLogo");
   if (splashLogoEl) splashLogoEl.src = CONFIG.logo || CONFIG.favicon;
+  const splashLogoEl = document.getElementById("splashLogo"); if (splashLogoEl) splashLogoEl.src = CONFIG.logo || CONFIG.favicon;
   const splashBrandEl = document.getElementById("splashBrand");
   if (splashBrandEl) splashBrandEl.textContent = configPick("name");
 
