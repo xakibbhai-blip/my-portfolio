@@ -124,7 +124,7 @@ collections:
               - { label: "Label (Bangla)", name: "label", widget: "string" }
               - { label: "Label (English)", name: "label_en", widget: "string" }
 
-  - name: "portfolio"
+   - name: "portfolio"
     label: "Portfolio Work / পোর্টফোলিও কাজ"
     files:
       - file: "content/portfolio.json"
@@ -138,11 +138,27 @@ collections:
             fields:
               - { label: "Title (Bangla)", name: "title", widget: "string" }
               - { label: "Title (English)", name: "title_en", widget: "string" }
+
               - label: "Category ID"
                 name: "category"
                 widget: "string"
                 hint: "Must exactly match a Category ID from the Categories section above."
-              - { label: "Image", name: "image", widget: "image" }
+
+              - label: "Cover Image"
+                name: "image"
+                widget: "image"
+                hint: "Main image shown on the portfolio card."
+
+              - label: "Gallery Images"
+                name: "gallery"
+                widget: "list"
+                required: false
+                field:
+                  label: "Gallery Image"
+                  name: "image"
+                  widget: "image"
+                hint: "Add multiple images for this project."
+
               - { label: "Description (Bangla)", name: "description", widget: "text", required: false }
               - { label: "Description (English)", name: "description_en", widget: "text", required: false }
 
