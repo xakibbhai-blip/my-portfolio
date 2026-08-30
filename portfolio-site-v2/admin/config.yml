@@ -124,7 +124,7 @@ collections:
               - { label: "Label (Bangla)", name: "label", widget: "string" }
               - { label: "Label (English)", name: "label_en", widget: "string" }
 
-   - name: "portfolio"
+    - name: "portfolio"
     label: "Portfolio Work / পোর্টফোলিও কাজ"
     files:
       - file: "content/portfolio.json"
